@@ -1,0 +1,29 @@
+<html>
+<body>
+<h1 align="center">KERALA TOURISM</h1><br><br>
+<h1><p id="name"></p></h1><br><br>
+<center><img src="kerala-tourism-header-m.jpg" height="800" width="800" id="image" onMouseOver="changeimg();">
+
+<script type="text/javascript">
+var img=["img1.webp","img2.jpg","img3.jpg","img4.jpg","img5.jpg"];
+var na=['Munnar','Alappuzha','Cochin','Trivandrum','Wayanad'];
+var i=0;
+var l=img.length;
+
+function changeimg()
+{
+while(i<l)
+{
+document.getElementById("image").src=img[i];
+document.getElementById("name").innerHTML=na[i];
+i=i+1;
+if(i==5)
+{
+i=0;
+}
+return;
+}
+}
+</script>
+</body>
+</html>

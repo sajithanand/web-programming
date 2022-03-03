@@ -1,0 +1,53 @@
+<!Doctype>
+<html>
+<head><title>Top bottom</title></head>
+<body style="background-color:#FAEBD7;">
+<h2>THIRD PAGE</h2>
+<div id="top">
+<a href="#bottom">Go to bottom</a>
+<p>Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type.<br> An array is used to store a collection of data,<br> but it is often more useful to think of an array as a collection of variables of the same type.<br></p>
+
+<p>Instead of declaring individual variables, such as number0, number1, ..., and number99,<br> you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99]<br> to represent individual variables. A specific element in an array is accessed by an index.<br>
+
+<p>All arrays consist of contiguous memory locations.<br> The lowest address corresponds to the first element and the highest address to the last element.<br>
+<h4><u>Declaring Arrays</u></h4>
+<p>To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows −
+<br>
+"type arrayName [ arraySize ];"<br>
+
+<p>This is called a single-dimensional array. The arraySize must be an integer constant greater than zero<br> and type can be any valid C data type. For example, to declare a<br> 10-element array called balance of type double, use this statement −<br>
+
+"double balance[10];"<br>
+<p>Here balance is a variable array which is sufficient to hold up to 10 double numbers.<br>
+<h4><u>Initializing Arrays</h4></u>
+
+<p>You can initialize an array in C either one by one or using a single statement as follows −<br>
+
+"double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};"<br>
+
+<p>The number of values between braces { } cannot be larger than the number of elements that<br> we declare for the array between square brackets [ ].<br>
+
+<p>If you omit the size of the array, an array just big enough to hold the initialization is created.<br> Therefore, if you write −<br>
+
+"double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};"<br>
+
+<p>You will create exactly the same array as you did in the previous example.<br> Following is an example to assign a single element of the array −<br>
+
+"balance[4] = 50.0;"
+
+<p>The above statement assigns the 5th element in the array with a value of 50.0.<br> All arrays have 0 as the index of their first element which is also called the base index<br> and the last index of an array will be total size of the array minus 1.<br> Shown below is the pictorial representation of the array we discussed above −<br>
+
+<h4><u>Accessing Array Elements</h4></u>
+
+<p>An element is accessed by indexing the array name. This is done by placing the index<br> of the element within square brackets after the name of the array. For example −<br>
+
+"double salary = balance[9];"<br>
+
+
+<p>The above statement will take the 10th element from the array and assign the value to salary variable.<br> The following example Shows how to use all the three above mentioned <br>concepts viz. declaration, assignment, and accessing arrays −<br>
+<img src="images.png" style= height:500px; >
+
+<div id="bottom">
+<a href="#top">Go to top</a>
+</body>
+</html>
